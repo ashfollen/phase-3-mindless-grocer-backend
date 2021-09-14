@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2021_09_13_213203) do
 
-  create_table "groceries", force: :cascade do |t|
+  create_table "ingredients", force: :cascade do |t|
     t.string "name"
     t.integer "quantity"
     t.string "aisle"
