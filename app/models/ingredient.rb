@@ -1,4 +1,4 @@
-class Grocery < ActiveRecord::Base
+class Ingredient < ActiveRecord::Base
     belongs_to :recipe
     belongs_to :market
 end 

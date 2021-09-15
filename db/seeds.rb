@@ -56,7 +56,7 @@ tomato = Ingredient.create(name: "Tomato", quantity: 3, market_id: farmersmarket
 mayonnaise = Ingredient.create(name: "Mayonnaise", quantity: 1, market_id: farmersmarket.id, recipe_id: blt.id)
 potato_bread = Ingredient.create(name: "Potato Bread", quantity: 1, market_id: baker.id, recipe_id: blt.id)
 
-wheat_bread = Ingredient.create(name: "Wheat Bread", quantity: , market_id: baker.id, recipe_id: avocado_toast.id)
+wheat_bread = Ingredient.create(name: "Wheat Bread", quantity: 1, market_id: baker.id, recipe_id: avocado_toast.id)
 avocado = Ingredient.create(name: "Avocado", quantity: 4, market_id: farmersmarket.id, recipe_id: avocado_toast.id)
 egg = Ingredient.create(name: "Egg", quantity: 1, market_id: farmersmarket.id, recipe_id: avocado_toast.id)
 pepper = Ingredient.create(name: "Pepper", quantity: 1, market_id: farmersmarket.id, recipe_id: avocado_toast.id)
