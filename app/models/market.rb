@@ -1,4 +1,4 @@
 class Market < ActiveRecord::Base
-    has_many :groceries
-    has_many :recipes, through: :groceries
+    has_many :ingredients
+    has_many :recipes, through: :ingredients
 end 
