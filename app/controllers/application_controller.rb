@@ -9,7 +9,7 @@ class ApplicationController < Sinatra::Base
 
   get "/recipes" do 
     recipes = Recipe.all
-    recipes.to_json #(include: { ingredients: { include: :market} })
+    recipes.to_json#(include: { ingredients: { include: :market} })
   end 
 
   get "/ingredients" do 
@@ -20,6 +20,14 @@ class ApplicationController < Sinatra::Base
   get "/markets" do 
     markets = Market.all
     markets.to_json
+  end 
+
+  patch '/recipes/:id' do
+    recipe = Recipe.find(params[:id])
+    recipe.update(
+      recipe_chosen: params[:recipe_chosen]
+    )
+    recipe.to_json
   end 
 
 end
