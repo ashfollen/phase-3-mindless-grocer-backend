@@ -14,7 +14,7 @@ class ApplicationController < Sinatra::Base
 
   get "/ingredients" do 
     ingredients = Ingredient.all
-    ingredients.to_json
+    ingredients.to_json(include: :recipe)
   end 
 
   get "/markets" do 
