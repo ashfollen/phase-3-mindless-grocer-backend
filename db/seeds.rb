@@ -20,10 +20,10 @@ grilled_cheese = Recipe.create(name: "Grilled Cheese")
 
 chickensandwich = Recipe.create(name: "Chicken Sandwich")
 pepperonipizza = Recipe.create(name: "Pepperoni Pizza")
-pork = Recipe.create(name: "Pork Chops with Applesauce and Asparagus")
+pork = Recipe.create(name: "Pork Chops")
 steak = Recipe.create(name: "Steak and Potatoes")
 chickensoup = Recipe.create(name: "Chicken Soup")
-spaghettisquash = Recipe.create(name: "Pesto and Tomato Spaghetti Squash")
+spaghettisquash = Recipe.create(name: "Spaghetti Squash")
 
 
 puts "Creating Markets"
@@ -42,7 +42,7 @@ marinara_sauce = Ingredient.create(name: "Marinara Sauce", quantity: 1, market_i
 
 romaine_lettuce = Ingredient.create(name: "Romaine Lettuce", quantity: 4, market_id: farmersmarket.id, recipe_id: caesar_salad.id)
 caesar_dressing = Ingredient.create(name: "Caesar Dressing", quantity: 1, market_id: farmersmarket.id, recipe_id: caesar_salad.id)
-crutons = Ingredient.create(name: "Crutons", quantity: 1, market_id: farmersmarket.id, recipe_id: caesar_salad.id)
+croutons = Ingredient.create(name: "Croutons", quantity: 1, market_id: farmersmarket.id, recipe_id: caesar_salad.id)
 parmesan = Ingredient.create(name: "Parmesan", quantity: 1, market_id: farmersmarket.id, recipe_id: caesar_salad.id)
  
 ground_beef = Ingredient.create(name: "Ground Beef", quantity: 1, market_id: butcher.id, recipe_id: sloppy_joe.id)
